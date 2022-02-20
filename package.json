@@ -1,0 +1,23 @@
+{
+  "name": "npm-install-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm run build",
+    "start": "node dist/esm/runner",
+    "clean": "del-cli dist",
+    "prebuild": "npm run clean",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del-cli": "^4.0.1",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@vikas/json-server-learn": "^0.0.5"
+  }
+}
